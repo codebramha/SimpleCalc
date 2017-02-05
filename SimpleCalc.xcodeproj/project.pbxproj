@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B25ED251DFB315B00E8782A /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25ED241DFB315B00E8782A /* CalculatorBrain.swift */; };
 		3BF1E5D61DFA236E000BA063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1E5D51DFA236E000BA063 /* AppDelegate.swift */; };
 		3BF1E5D81DFA236E000BA063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1E5D71DFA236E000BA063 /* ViewController.swift */; };
 		3BF1E5DB1DFA236E000BA063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1E5D91DFA236E000BA063 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B25ED241DFB315B00E8782A /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		3BF1E5D21DFA236E000BA063 /* SimpleCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF1E5D51DFA236E000BA063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF1E5D71DFA236E000BA063 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B25ED261DFB45B600E8782A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3B25ED241DFB315B00E8782A /* CalculatorBrain.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		3B25ED271DFB45D000E8782A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1E5D71DFA236E000BA063 /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		3B25ED281DFB45E300E8782A /* other files */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1E5D51DFA236E000BA063 /* AppDelegate.swift */,
+				3BF1E5DC1DFA236E000BA063 /* Assets.xcassets */,
+				3BF1E5DE1DFA236E000BA063 /* LaunchScreen.storyboard */,
+				3BF1E5E11DFA236E000BA063 /* Info.plist */,
+			);
+			name = "other files";
+			sourceTree = "<group>";
+		};
 		3BF1E5C91DFA236E000BA063 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +83,10 @@
 		3BF1E5D41DFA236E000BA063 /* SimpleCalc */ = {
 			isa = PBXGroup;
 			children = (
-				3BF1E5D51DFA236E000BA063 /* AppDelegate.swift */,
-				3BF1E5D71DFA236E000BA063 /* ViewController.swift */,
+				3B25ED281DFB45E300E8782A /* other files */,
+				3B25ED271DFB45D000E8782A /* controller */,
 				3BF1E5D91DFA236E000BA063 /* Main.storyboard */,
-				3BF1E5DC1DFA236E000BA063 /* Assets.xcassets */,
-				3BF1E5DE1DFA236E000BA063 /* LaunchScreen.storyboard */,
-				3BF1E5E11DFA236E000BA063 /* Info.plist */,
+				3B25ED261DFB45B600E8782A /* model */,
 			);
 			path = SimpleCalc;
 			sourceTree = "<group>";
@@ -91,7 +118,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Code Bramha";
 				TargetAttributes = {
 					3BF1E5D11DFA236E000BA063 = {
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B25ED251DFB315B00E8782A /* CalculatorBrain.swift in Sources */,
 				3BF1E5D81DFA236E000BA063 /* ViewController.swift in Sources */,
 				3BF1E5D61DFA236E000BA063 /* AppDelegate.swift in Sources */,
 			);
@@ -182,6 +210,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -302,6 +332,7 @@
 				3BF1E5E61DFA236E000BA063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
